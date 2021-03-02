@@ -1,0 +1,39 @@
+td img{ /* imagen para la tabla de resultados (participantes) */
+  height: 40px;
+  width: 30px;
+}
+
+table tr > td{
+  padding: 0!important; 
+  line-height: 40px;
+}
+
+table tr > th{
+  background-color: rgb(207, 207, 207);
+  color: #000;
+  border: none!important;
+}
+
+table tr>th>img{
+  height: 30px;
+}
+
+#jornada{
+  width: 128px;
+  background-color: rgb(34, 30, 30);
+  border-color: rgb(71, 71, 71);
+  border-radius: 4px;
+  color: #fff;
+}
+
+.withoutResult{
+  font-weight: bold;
+}
+
+.doubleAcert{
+  background-color: rgb(33, 42, 70);
+}
+
+.singleAcert{
+  background-color: rgb(29, 71, 13);
+}

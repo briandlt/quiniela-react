@@ -1,0 +1,8 @@
+.imageHome {
+  background: url('../../assets/imgs/fondo2.jpg');
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}

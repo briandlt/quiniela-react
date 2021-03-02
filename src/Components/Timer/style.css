@@ -1,0 +1,26 @@
+.chronometer{
+  background-color: rgba(0, 0, 0, 0.644);
+  min-height: 150px;
+  max-height: 200px;
+  margin-top: 80px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.chronometer>div>img{
+  height: 55px;
+}
+
+.chronometer2{
+  background-color: rgba(255, 255, 255, 0.664);
+  padding: 8px;
+  min-height: 150px;
+  max-height: 200px;
+  margin: 40px 15px 0;
+  border-radius: 8px;
+  color: #000;
+}
+
+.chronometer2>div>img{
+  height: 55px;
+}

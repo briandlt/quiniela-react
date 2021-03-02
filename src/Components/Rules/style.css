@@ -1,0 +1,25 @@
+section {
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h2 {
+  margin-top: 25px;
+}
+
+.section-rules {
+  padding: 25px 50px;
+}
+
+.section-rules > p {
+  font-size: 18px;
+  text-align: left;
+}
+
+.firma {
+  margin-top: 40px;
+}
+
+.firma > img{
+  border-bottom: 1px solid #fff;
+}

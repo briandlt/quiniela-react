@@ -1,23 +1,44 @@
-import logo from './logo.svg';
+import { useState } from 'react'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import SessionContext from './Context/SessionContext'
 import './App.css';
+// pages
+import Home from './Pages/Home'
+import Quiniela from './Pages/Quiniela'
+import AddResults from './Pages/AddResults'
+import Regulation from './Pages/Regulation'
+import Positions from './Pages/Positions'
 
 function App() {
+  const [session, setSession] = useState(JSON.parse(sessionStorage.getItem('manager')))
+  const value = {session, setSession}
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SessionContext.Provider value={value}>
+        <Router>
+          <Switch>
+            <Route path="/quiniela">
+              <Quiniela />
+            </Route>
+            <Route path="/positions">
+              <Positions />
+            </Route>
+            <Route path="/regulation">
+              <Regulation />
+            </Route>
+            <Route path="/addresults">
+              <AddResults />
+            </Route>
+            <Route path="/users">
+              <Link to='/'>Home</Link>
+              <Link to='/Quiniela'>Quiniela</Link>
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </Router>
+      </SessionContext.Provider>
     </div>
   );
 }
